@@ -57,7 +57,7 @@ export default function Hero() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Maya_Mannam_Resume.pdf";
+    link.download = "Ramya_Mannam_Resume.pdf";
     link.click();
   };
 
@@ -97,7 +97,7 @@ export default function Hero() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
             >
               Hi, I&apos;m{" "}
-              <span className="gradient-text">Maya Mannam</span>
+              <span className="gradient-text">Ramya Mannam</span>
             </motion.h1>
 
             <motion.div
@@ -179,7 +179,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20" />
                 <Image
                   src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Maya Mannam"
+                  alt="Ramya Mannam"
                   fill
                   className="object-cover"
                   priority

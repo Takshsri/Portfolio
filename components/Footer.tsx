@@ -27,7 +27,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
                 <Code2 className="w-6 h-6 text-white" />
               </div>
-              <span className="text-lg font-bold gradient-text">Maya</span>
+              <span className="text-lg font-bold gradient-text">Ramya</span>
             </div>
             <p className="text-gray-400 text-sm">
               Full Stack Developer crafting elegant solutions with modern
@@ -79,7 +79,7 @@ export default function Footer() {
             React & Tailwind CSS
           </p>
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Maya Mannam. All rights reserved.
+            © {new Date().getFullYear()} Ramya Mannam. All rights reserved.
           </p>
         </div>
       </div>

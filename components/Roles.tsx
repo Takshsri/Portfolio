@@ -58,7 +58,7 @@ export default function Roles() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Maya_Mannam_Resume.pdf";
+    link.download = "Ramya_Mannam_Resume.pdf";
     link.click();
     setShowPopup(true);
     setTimeout(() => setShowPopup(false), 3000);

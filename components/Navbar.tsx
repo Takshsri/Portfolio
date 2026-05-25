@@ -63,7 +63,7 @@ export default function Navbar() {
                 <Code2 className="w-6 h-6 text-white" />
               </div>
               <span className="text-lg font-bold gradient-text hidden sm:block">
-                Maya
+                Ramya
               </span>
             </motion.a>
 

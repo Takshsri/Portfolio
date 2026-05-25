@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "maya@example.com", href: "mailto:maya@example.com" },
+  { icon: Mail, label: "Email", value: "Ramya@example.com", href: "mailto:Ramya@example.com" },
   { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
   { icon: MapPin, label: "Location", value: "San Francisco, CA", href: null },
 ];

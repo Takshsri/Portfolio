@@ -18,7 +18,7 @@ export default function Resume() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Maya_Mannam_Resume.pdf";
+    link.download = "Ramya_Mannam_Resume.pdf";
     link.click();
   };
 
@@ -56,7 +56,7 @@ export default function Resume() {
               </div>
 
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl font-bold mb-2">Maya Mannam</h3>
+                <h3 className="text-2xl font-bold mb-2">Ramya Mannam</h3>
                 <p className="text-gray-400 mb-4">
                   Full Stack Developer Resume
                 </p>

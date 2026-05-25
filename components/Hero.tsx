@@ -55,7 +55,7 @@ export default function Hero() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Ramya_Mannam.pdf";
+    link.href = "/Ramya_Resume.pdf";
     link.download = "Ramya_Mannam_Resume.pdf";
     link.click();
   };

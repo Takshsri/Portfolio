@@ -19,7 +19,7 @@ const roles = [
     description:
       "End-to-end development with React, Node.js, and modern databases",
     color: "from-cyan-500 to-blue-500",
-    resume: "/ramyaresume2026.pdf",
+    resume: "/Ramya_FullStack.pdf",
   },
   {
     icon: Globe,
@@ -27,7 +27,7 @@ const roles = [
     description:
       "Beautiful, responsive interfaces with React, Next.js, and Tailwind",
     color: "from-teal-500 to-emerald-500",
-    resume: "/ramyaresume2026.pdf",
+    resume: "/Ramya_FullStack.pdf",
   },
   {
     icon: Server,
@@ -35,7 +35,7 @@ const roles = [
     description:
       "Robust APIs and services with NestJS, Express, and FastAPI",
     color: "from-blue-500 to-indigo-500",
-    resume: "/ramyaresume2026.pdf",
+    resume: "/Ramya_FullStack.pdf",
   },
   {
     icon: FileCode,

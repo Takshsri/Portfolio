@@ -24,37 +24,37 @@ const stats = [
 const resumes = [
   {
     name: "Full Stack Resume",
-    file: "/Ramya_Resume.pdf",
+    file: "/Ramya_FullStack.pdf",
     icon: Code,
     color: "from-cyan-500 to-blue-600",
   },
   {
     name: "Frontend Resume",
-    file: "/Ramya_Resume.pdf",
+    file: "/Ramya_FullStack.pdf",
     icon: Globe,
     color: "from-teal-500 to-emerald-500",
   },
   {
     name: "Backend Resume",
-    file: "/Ramya_Resume.pdf",
+    file: "/Ramya_FullStack.pdf",
     icon: Server,
     color: "from-blue-500 to-indigo-500",
   },
   {
     name: "Python Resume",
-    file: "/ramyaresume2026.pdf",
+    file: "/Ramya_Resume.pdf",
     icon: FileText,
     color: "from-orange-500 to-red-500",
   },
   {
     name: "Machine Learning Resume",
-    file: "/ramyaresume2026.pdf",
+    file: "/Ramya_Resume.pdf",
     icon: Brain,
     color: "from-pink-500 to-rose-500",
   },
   {
     name: "AI Engineer Resume",
-    file: "/ramyaresume2026.pdf",
+    file: "/Ramya_Resume.pdf",
     icon: Brain,
     color: "from-violet-500 to-purple-500",
   },

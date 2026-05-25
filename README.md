@@ -7,7 +7,7 @@ A modern and responsive developer portfolio built using **Next.js**, **React**, 
 
 ## 🚀 Live Demo
 
-🌐 Portfolio: https://your-portfolio-link.vercel.app
+🌐 Portfolio: https://portfolio-azure-iota-1x1mne5sw4.vercel.app
 
 ---
 

@@ -48,6 +48,7 @@ const skillCategories = [
       { name: "Python", level: 90 },
       { name: "Java", level: 75 },
       { name: "C++", level: 70 },
+      { name: "JavaScript", level: 88 },
     ],
   },
   {
@@ -61,6 +62,30 @@ const skillCategories = [
       { name: "Matplotlib", level: 78 },
     ],
   },
+    {
+  name: "Artificial Intelligence",
+  icon: "🧠",
+  color: "from-violet-500 to-purple-500",
+  skills: [
+    { name: "LLMs", level: 75 },
+    { name: "RAG Systems", level: 70 },
+    { name: "Agentic AI", level: 68 },
+    { name: "Prompt Engineering", level: 82 },
+    { name: "AI Workflows", level: 72 },
+  ],
+},
+  {
+  name: "System Design",
+  icon: "🏗️",
+  color: "from-yellow-500 to-amber-500",
+  skills: [
+    { name: "Scalability", level: 72 },
+    { name: "API Design", level: 85 },
+    { name: "Microservices", level: 70 },
+    { name: "Caching", level: 68 },
+    { name: "System Architecture", level: 74 },
+  ],
+},
   {
     name: "Tools",
     icon: "🛠️",
@@ -73,6 +98,7 @@ const skillCategories = [
       { name: "Docker", level: 70 },
     ],
   },
+
 ];
 
 export default function Skills() {
@@ -100,25 +126,23 @@ export default function Skills() {
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {skillCategories.map((category, catIndex) => (
             <motion.div
               key={category.name}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + catIndex * 0.1 }}
-              className="glass rounded-xl p-6 group hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300"
-            >
+              className="glass rounded-xl p-4 group hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300"            >
               <div className="flex items-center gap-3 mb-6">
                 <div
-                  className={`w-12 h-12 rounded-lg bg-gradient-to-br ${category.color} flex items-center justify-center text-2xl`}
-                >
+                  className={`w-12 h-12 rounded-lg bg-gradient-to-br ${category.color} flex items-center justify-center text-2xl`}>
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-semibold">{category.name}</h3>
+                <h3 className="text-lg font-semibold">{category.name}</h3>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skill.name}

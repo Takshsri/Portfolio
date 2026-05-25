@@ -7,39 +7,70 @@ import Image from "next/image";
 
 const certifications = [
   {
-    title: "Python Programming Certification",
-    issuer: "Coursera",
-    date: "2024",
+    title: "Software Architecture and System Design Fundamentals",
+    issuer: "ScholarHat",
+    date: "2026",
     image:
-      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400",
-    verifyUrl: "#",
+      "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=400",
+    verifyUrl:
+      "https://drive.google.com/file/d/1WDj3ZUksrctfy3HxFoIOKIEAHnY9u8m3/view?usp=drivesdk",
   },
-  {
-    title: "Full Stack Web Development Certification",
-    issuer: "Udemy",
-    date: "2024",
-    image:
-      "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=400",
-    verifyUrl: "#",
-  },
-  {
-    title: "Machine Learning Certification",
-    issuer: "Stanford Online",
-    date: "2023",
-    image:
-      "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
-    verifyUrl: "#",
-  },
-  {
-    title: "React Development Certification",
-    issuer: "Meta",
-    date: "2023",
-    image:
-      "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=400",
-    verifyUrl: "#",
-  },
-];
 
+  {
+    title: "Cloud Computing",
+    issuer: "NPTEL",
+    date: "2025",
+    image:
+      "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=400",
+    verifyUrl:
+      "https://drive.google.com/file/d/1cu2gD210amfbKSF8tGLIiB1V42eftF-Y/view?usp=drivesdk",
+  },
+
+  {
+    title: "Machine Learning",
+    issuer: "PrepInsta Prime",
+    date: "2026",
+    image:
+      "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=400",
+    verifyUrl: "#",
+  },
+
+  {
+    title: "Problem Solving Methods and Artificial Intelligence",
+    issuer: "NPTEL",
+    date: "2025",
+    image:
+      "https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=400",
+    verifyUrl:
+      "https://drive.google.com/file/d/14nf-nH12U0jGAQ11oAkzmoDPhWTxwFf2/view?usp=drivesdk",
+  },
+
+  {
+    title: "Python Programming",
+    issuer: "PrepInsta Prime",
+    date: "2026",
+    image:
+      "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400",
+    verifyUrl: "#",
+  },
+
+  {
+    title: "Full Stack Web Development",
+    issuer: "PrepInsta Prime",
+    date: "2026",
+    image:
+      "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400",
+    verifyUrl: "#",
+  },
+  {
+  title: "AWS ",
+  issuer: "PrepInsta Prime",
+  date: "2026",
+  image:
+    "https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=400",
+  verifyUrl: "#",
+},
+];
 export default function Certifications() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });

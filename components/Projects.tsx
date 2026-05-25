@@ -13,10 +13,35 @@ const projects = [
     image:
       "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["React", "NestJS", "MongoDB", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://eventz-aa4j.vercel.app",
+    githubUrl: "https://github.com/vens010/stvensi",
     featured: true,
   },
+
+  {
+    title: "RenewAlert",
+    description:
+      "RenewAlert is a modern full-stack subscription management platform that helps users track, monitor, and manage recurring subscriptions from a centralized dashboard. The platform provides renewal reminders, spending analytics, and subscription alerts for services such as SaaS tools, OTT platforms, memberships, and online services.",
+    image:
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tech: ["React", "NestJS", "PostgreSQL", "Tailwind CSS"],
+    liveUrl: "https://renew-mate-fluprbjnb-ramyamannam7-6691s-projects.vercel.app/",
+    githubUrl: "https://github.com/Takshsri/Renew_Mate",
+    featured: true,
+  },
+
+  {
+    title: "StackSpend AI",
+    description:
+      "An AI-powered financial and subscription analytics platform that helps users analyze recurring expenses, predict spending patterns, generate intelligent insights, and optimize subscription usage using modern AI workflows and data visualization techniques.",
+    image:
+      "https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tech: ["React", "Python", "AI", "PostgreSQL"],
+    liveUrl: "https://stackspend-m5f2txtkb-ramyamannam7-6691s-projects.vercel.app",
+    githubUrl: "https://github.com/Takshsri/Stackspend-ai",
+    featured: true, 
+  },
+
   {
     title: "Python Workflow Automation System",
     description:
@@ -28,17 +53,31 @@ const projects = [
     githubUrl: "#",
     featured: true,
   },
+
   {
     title: "Machine Learning House Price Prediction",
     description:
-      "A machine learning project for predicting house prices using regression algorithms and feature engineering with comprehensive data analysis.",
+      "A machine learning project for predicting house prices using regression algorithms, feature engineering, and advanced data analysis techniques.",
     image:
-      "https://images.pexels.com/photo-106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["Python", "Scikit-learn", "Pandas", "NumPy"],
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
   },
+
+  {
+    title: "AI Resume Analyzer",
+    description:
+      "An intelligent AI-based resume analysis platform that evaluates resumes, extracts technical skills, suggests improvements, and matches profiles against job descriptions using NLP and LLM-based workflows.",
+    image:
+      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tech: ["Python", "LLMs", "NLP", "FastAPI"],
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+
   {
     title: "API Integration Projects",
     description:
@@ -51,7 +90,6 @@ const projects = [
     featured: false,
   },
 ];
-
 export default function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -75,7 +113,7 @@ export default function Projects() {
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

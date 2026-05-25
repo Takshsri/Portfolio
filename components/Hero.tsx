@@ -8,7 +8,7 @@ import {
   Github,
   Linkedin,
   Mail,
-  Twitter,
+
 } from "lucide-react";
 import Image from "next/image";
 
@@ -21,10 +21,9 @@ const titles = [
 ];
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, href: "https://github.com", color: "hover:text-white" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com", color: "hover:text-sky-400" },
-  { name: "Twitter", icon: Twitter, href: "https://twitter.com", color: "hover:text-blue-400" },
-  { name: "Email", icon: Mail, href: "mailto:hello@example.com", color: "hover:text-cyan-400" },
+  { name: "GitHub", icon: Github, href: "https://github.com/Takshsri", color: "hover:text-white" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/ramya-mannam-bb6703289", color: "hover:text-sky-400" },
+  { name: "Email", icon: Mail, href: "mailto:ramyamannam7@gmail.com", color: "hover:text-cyan-400" },
 ];
 
 export default function Hero() {
@@ -116,8 +115,9 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
               className="text-gray-400 text-lg max-w-lg mb-8"
             >
-              Passionate software engineering student crafting elegant solutions
-              through full-stack development, blending creativity with technical excellence.
+              Passionate software engineering student focused on full-stack development, 
+              machine learning, AI, and system design, crafting scalable and intelligent
+               digital solutions with creativity and technical excellence.
             </motion.p>
 
             <motion.div
@@ -178,7 +178,7 @@ export default function Hero() {
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-cyan-500/30 animate-pulse-glow">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20" />
                 <Image
-                  src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://i.pinimg.com/1200x/18/e2/c4/18e2c4d8ef7c7e2e18f76b57409361ea.jpg"
                   alt="Ramya Mannam"
                   fill
                   className="object-cover"

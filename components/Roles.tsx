@@ -19,6 +19,7 @@ const roles = [
     description:
       "End-to-end development with React, Node.js, and modern databases",
     color: "from-cyan-500 to-blue-500",
+    resume: "/ramyaresume2026.pdf",
   },
   {
     icon: Globe,
@@ -26,6 +27,7 @@ const roles = [
     description:
       "Beautiful, responsive interfaces with React, Next.js, and Tailwind",
     color: "from-teal-500 to-emerald-500",
+    resume: "/ramyaresume2026.pdf",
   },
   {
     icon: Server,
@@ -33,20 +35,31 @@ const roles = [
     description:
       "Robust APIs and services with NestJS, Express, and FastAPI",
     color: "from-blue-500 to-indigo-500",
+    resume: "/ramyaresume2026.pdf",
   },
   {
     icon: FileCode,
     title: "Python Developer",
     description:
-      "Scripting, automation, and data processing with Python",
+      "Scripting, automation, and backend development with Python",
     color: "from-orange-500 to-red-500",
+    resume: "/Ramya_Resume.pdf",
   },
   {
     icon: Brain,
     title: "Machine Learning Engineer",
     description:
-      "Predictive models and data analysis with Scikit-learn",
+      "Predictive models and intelligent systems using ML workflows",
     color: "from-pink-500 to-rose-500",
+    resume: "/Ramya_Resume.pdf",
+  },
+  {
+    icon: Brain,
+    title: "AI Engineer",
+    description:
+      "LLMs, RAG systems, Agentic AI workflows, and intelligent applications",
+    color: "from-violet-500 to-purple-500",
+    resume: "/Ramya_Resume.pdf",
   },
 ];
 
@@ -55,14 +68,17 @@ export default function Roles() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [showPopup, setShowPopup] = useState(false);
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Ramya_Mannam_Resume.pdf";
-    link.click();
-    setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 3000);
-  };
+  const handleDownload = (resume: string, role: string) => {
+  const link = document.createElement("a");
+  link.href = resume;
+  link.download = `${role.replace(/\s+/g, "_")}_Resume.pdf`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  setShowPopup(true);
+  setTimeout(() => setShowPopup(false), 3000);
+};
 
   return (
     <section id="roles" className="py-20 relative">
@@ -94,7 +110,7 @@ export default function Roles() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              onClick={handleDownload}
+              onClick={() => handleDownload(role.resume, role.title)}
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
               className="group glass rounded-xl p-6 text-left cursor-pointer relative overflow-hidden"

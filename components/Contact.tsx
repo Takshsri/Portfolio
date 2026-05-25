@@ -9,22 +9,20 @@ import {
   Send,
   Github,
   Linkedin,
-  Twitter,
+ 
   ExternalLink,
 } from "lucide-react";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "Ramya@example.com", href: "mailto:Ramya@example.com" },
-  { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-  { icon: MapPin, label: "Location", value: "San Francisco, CA", href: null },
+  { icon: Mail, label: "Email", value: "ramyamannam7@gmail.com", href: "mailto:ramyamannam7@gmail.com" },
+  { icon: Phone, label: "Phone", value: "+91 9010811287", href: "tel:+919010811287" },
+  { icon: MapPin, label: "Location", value: "Ongole, Andhra Pradesh", href: null },
 ];
 
 const socials = [
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com", color: "hover:text-sky-400" },
-  { name: "GitHub", icon: Github, href: "https://github.com", color: "hover:text-white" },
-  { name: "Twitter", icon: Twitter, href: "https://twitter.com", color: "hover:text-blue-400" },
-  { name: "LeetCode", icon: ExternalLink, href: "https://leetcode.com", color: "hover:text-orange-400" },
-  { name: "HackerRank", icon: ExternalLink, href: "https://hackerrank.com", color: "hover:text-green-400" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/ramyamannam", color: "hover:text-sky-400" },
+  { name: "GitHub", icon: Github, href: "https://github.com/Takshsri", color: "hover:text-white" },
+  { name: "LeetCode", icon: ExternalLink, href: "https://leetcode.com/u/mannamramya/", color: "hover:text-orange-400" },
 ];
 
 export default function Contact() {

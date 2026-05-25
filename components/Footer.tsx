@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Code2, Github, Linkedin, Heart } from "lucide-react";
 
 const quickLinks = [
   { name: "Home", href: "#home" },
@@ -12,9 +12,8 @@ const quickLinks = [
 ];
 
 const socials = [
-  { name: "GitHub", icon: Github, href: "https://github.com" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
-  { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
+  { name: "GitHub", icon: Github, href: "https://github.com/Takshsri" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/ramyamannam" },
 ];
 
 export default function Footer() {
@@ -29,10 +28,12 @@ export default function Footer() {
               </div>
               <span className="text-lg font-bold gradient-text">Ramya</span>
             </div>
-            <p className="text-gray-400 text-sm">
-              Full Stack Developer crafting elegant solutions with modern
-              technologies. Passionate about building impactful applications.
-            </p>
+            <p className="text-gray-400 text-sm leading-relaxed">
+                  Full Stack Developer passionate about building scalable and intelligent
+                  applications using modern technologies. Focused on AI, Machine Learning,
+                  System Design, and creating impactful digital experiences through clean,
+                  efficient, and user-centric engineering.
+                </p>
           </div>
 
           <div>

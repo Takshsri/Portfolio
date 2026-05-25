@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code, Server, Brain, Rocket } from "lucide-react";
+import { Code, Server, Brain, Rocket, Cpu, Database } from "lucide-react";
 
 const highlights = [
   {
@@ -17,16 +17,25 @@ const highlights = [
   },
   {
     icon: Brain,
-    title: "Machine Learning",
-    description: "Data analysis and predictive modeling",
+    title: "Machine Learning & AI",
+    description: "Predictive models, LLMs, RAG systems, and intelligent applications",
+  },
+  {
+    icon: Cpu,
+    title: "System Design",
+    description: "Designing scalable, efficient, and high-performance architectures",
+  },
+  {
+    icon: Database,
+    title: "Data Structures & Algorithms",
+    description: "Strong problem-solving with optimized algorithms and coding patterns",
   },
   {
     icon: Rocket,
     title: "Problem Solving",
-    description: "Creative solutions for complex challenges",
+    description: "Advanced algorithms and creative solutions for complex challenges",
   },
 ];
-
 export default function About() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -59,22 +68,33 @@ export default function About() {
           >
             <div className="glass rounded-2xl p-8">
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I&apos;m a passionate software engineering student with a deep love for
-                full-stack development and creating elegant, efficient solutions.
-                My journey in tech started with curiosity about how things work,
-                and has evolved into a dedication to building impactful applications.
+                I&apos;m a passionate software engineering student with a strong interest in
+                full-stack development, machine learning, artificial intelligence, and
+                system design. My journey in tech started with curiosity about how systems
+                work internally and evolved into building scalable, intelligent, and
+                impactful digital solutions.
               </p>
+
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I specialize in <span className="text-cyan-400 font-medium">React</span> and{" "}
-                <span className="text-cyan-400 font-medium">NestJS</span> for full-stack applications,
-                with strong expertise in <span className="text-cyan-400 font-medium">Python</span> for
-                backend development and automation. I&apos;m fascinated by the intersection
-                of web development and machine learning.
+                I specialize in{" "}
+                <span className="text-cyan-400 font-medium">React</span> and{" "}
+                <span className="text-cyan-400 font-medium">NestJS</span> for modern
+                full-stack applications, with strong expertise in{" "}
+                <span className="text-cyan-400 font-medium">Python</span> for backend
+                development, automation, APIs, and machine learning workflows. I&apos;m
+                highly interested in AI technologies including{" "}
+                <span className="text-cyan-400 font-medium">LLMs</span>,{" "}
+                <span className="text-cyan-400 font-medium">RAG architectures</span>, and{" "}
+                <span className="text-cyan-400 font-medium">Agentic AI fundamentals</span>,
+                along with designing scalable systems and intelligent applications.
               </p>
+
               <p className="text-gray-300 text-lg leading-relaxed">
-                When I&apos;m not coding, you&apos;ll find me exploring new technologies,
-                contributing to open-source projects, or diving deep into algorithmic
-                problem solving on coding platforms.
+                Beyond development, I actively explore advanced data structures,
+                algorithmic problem solving, and important algorithms related to searching,
+                graph traversal, dynamic programming, and optimization techniques. I also
+                enjoy learning modern system design concepts, contributing to projects, and
+                continuously exploring emerging technologies in AI and software engineering.
               </p>
             </div>
           </motion.div>

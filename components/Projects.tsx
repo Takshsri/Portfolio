@@ -50,21 +50,27 @@ const projects = [
       "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["Python", "FastAPI", "APIs", "Automation"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Takshsri/WorkFlow",
     featured: true,
   },
 
-  {
-    title: "Machine Learning House Price Prediction",
-    description:
-      "A machine learning project for predicting house prices using regression algorithms, feature engineering, and advanced data analysis techniques.",
-    image:
-      "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tech: ["Python", "Scikit-learn", "Pandas", "NumPy"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
+{
+  title: "Machine Learning Insurance Cost Predictor",
+  description:
+    "Developed an end-to-end machine learning application to predict medical insurance charges using Linear Regression. Implemented data preprocessing, feature engineering, feature scaling, correlation analysis, hypothesis testing using Chi-Square and Pearson Correlation, interaction features (BMI × Smoker, Age × Smoker), and model evaluation using MAE, RMSE, and R² Score achieving an R² score of 0.88. Deployed the model with an interactive Streamlit dashboard for real-time predictions.",
+  image:
+    "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800",
+  tech: [
+    "Python",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Streamlit"
+  ],
+  liveUrl: "https://insurancepredict-mp2jbb7fd3osxayxjyzzpd.streamlit.app",
+  githubUrl: "https://github.com/Takshsri/InsurancePredict",
+  featured: true,
+},
 
   {
     title: "AI Resume Analyzer",
@@ -76,19 +82,7 @@ const projects = [
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
-  },
-
-  {
-    title: "API Integration Projects",
-    description:
-      "Projects involving third-party APIs, authentication systems, and real-time data handling with seamless integration across multiple platforms.",
-    image:
-      "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tech: ["REST APIs", "Node.js", "Express.js", "OAuth"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
+  }
 ];
 export default function Projects() {
   const ref = useRef(null);
